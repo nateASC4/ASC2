@@ -1,0 +1,5 @@
+var arceusHP = 6980
+var arceusNum = 493
+var arceusType = ("Normal"):
+var arceusBestMove = "Judgement"
+var arceusLastEvo = "True"
