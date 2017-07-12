@@ -6,10 +6,13 @@ for (var i=0 ; i<5; i++){
     (console.log(myPokemonRoster[i])
 }
 
-for (var i=4 i<5 i--){
+for (var i=4 i>0 i--){
 (console.log(myPokemonRoster[i])
 }
+
+
+
 for (var i=4 i< i++){
     console.length
-}
+}  
 
