@@ -1,0 +1,43 @@
+* {
+     border: 1px dotted red; 
+}
+
+body,html {
+    height: 100%;
+}
+
+.jumbotron {
+    height: 60%;
+    background-position-x: center;
+    margin: 0px;
+}
+
+.heading{
+    background-color: orange;
+    text-align: center;
+    height: 20%;
+}
+.section-1{
+    background-color: red;
+    background: url(Football1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-size: 125%; */
+}
+.section-2{
+    background-color: red;
+    background: url(Football2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.section-3{
+    background-color: red;
+    background: url(Football3.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

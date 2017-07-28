@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.jumbotron{
+    font-size: 13px;
+    color: white;
+    background-attachment: scroll;  
+    text-align: center;
+    font-size: 29px;
+    background-image: url("http://cdn.wallpapersafari.com/23/13/einWSP.jpg");
+}
+body{
+     background-image: url("http://www.myfreephotoshop.com/wp-content/uploads/2014/01/4113.jpg");
+     background-attachment: scroll;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.col-md-4
+{    display: block;
+     color: white;
+    text-align: center;
+    height: 100px;
+    display: block
+}
+
+
