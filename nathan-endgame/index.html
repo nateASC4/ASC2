@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- <title>Endgame Loading Page</title> -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <div class="loading">Loading&#8230;</div> -->
+
+<script
+ src="http://code.jquery.com/jquery-3.2.1.min.js"
+ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+ crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" class="css">
+    <script src = "app.js"></script>
+</head>
+<body>
+
+    <input type="text" id="userInput"=> give me input</input>
+<button id="submit" onclick="test()">Submit</button>
+
+<!-- add this line for function to write into -->
+<p id="demo"></p>   
+
+<script type="text/javascript">
+function test(){
+    var userInput = document.getElementById("userInput").value;
+    function plusp(str){
+    var replaced = str.split(' ').join('+');
+    return replaced;
+    }
+var name = plusp(userInput);
+console.log(name);
+
+$('#submit').click(function(){
+
+    $.ajax({
+    url: 'http://api.jambase.com/artists?name='+ name +'&page=0&api_key=m8ma4jdmdms5k6mvne9hu6b6',
+    dataType: 'json',
+    success: function(data){
+        var artistId = data.Artists[0].Id
+
+    $.ajax({
+        url: 'http://api.jambase.com/events?artistId='+ artistId +'&zipCode=10530&radius=50&page=0&api_key=m8ma4jdmdms5k6mvne9hu6b6',
+        dataType: 'json',
+        success: function(data){
+            console.log(data)
+        }
+    })
+    }
+})
+})
+}
+
+
+
+</script>
+    
+</body>
+</html>
