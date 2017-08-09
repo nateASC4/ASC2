@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nathan Antwi, Dev</title>
-    <!-- Latest compiled and minified CSS -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -14,39 +13,84 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="main.css" class="css">  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+<link rel="stylesheet" href="main.css" class="css">
+<script src="app.js"></script>
+<style>@import url('https://fonts.googleapis.com/css?family=Saira');</style>
 </head>
 <body>
-  
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Hello</span></a>
+            </div>
 
-<div class="jumbotron">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+  <div class="jumbotron">
   <div class="container">
-   <img src = "nathan.jpg" class="img-circle" width="300" height="300">
-   <h1>Hello, my name is Nathan Antwi and Welcome to my page.</h1>
+     <h1> Welcome to my World</h1>
+     <img src = "nathan.jpg" class="img-circle" width="360" height="360"> 
+     <div class="btn btn-circle page-scroll"></div>
+     <a href="#about" class="btn btn-circle page-scroll">
+    <i class="fa fa-angle-double-down animated">  
+    </i> </a>
   </div> 
 </div><!-- end jumbotron -->
-
-<div class ="container about">
-      
-      <div class="row">
-        <div class="col-md-4">
-          <h2>About</h2>
-          <p>Name: Nathan Antwi</p>
-          <p>Age: 17</p>
-          <p>Location: Greater NYC Area </p>
-        </div>
-        <div class="col-md-4">
-          <h2>Experience</h2>
-          <p>JavaScript</p>
-          <p>p5.jsx</p>
-
-        </div>
-        <div class="col-md-4">
-          <h2>Contacts</h2>
-          <p><a href="#" class="">LinkedIn</a></p>
-          <p><a href="#" class="">GitHub</a></p>
-        </div>
-      </div>
+<div class="container quote">
+  <!--remember </!--></div>
+<div class="container about"> 
+<h1>
+  <b>About Me</b>
+</h1>
+<p1>
+  <lead>Hello, my name is Nathan Antwi. I am an aspiring game developer from the greater New York City Area. I hail from Irvington New Jersey which is a reasonably sized town next to the city of Newark. As you venture in to my website, you will see some of the projects that I have personally constructed or assisted in the development of. Enjoy and at the bottom of the screen there is a number of meduims where you can contact me on. 
+    
+  Godspeed,
+  Nate</lead>
+</p1>
+<h2> Skills </h2>
+  <p2> JavaScript
+          p5
+          Bootstrap
+       Microsoft Office (Excel, Word) 
+       Google Drive
+       Project Management
+</p2>
+</div>
+<div class="container extra"></div>
+<div class ="container projects">  
 </div> <!--end about -->
+<div class = "container contact">
+  <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+  <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+ <a href="https://www.instagram.com/yaw.nate/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+  <a href= "https://www.linkedin.com/in/nathan-antwi-irvington/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+  <!-- >put Gmail Linked in Git Hub and Instagram icons here </! -->
+</div>
 </body> 
 </html>

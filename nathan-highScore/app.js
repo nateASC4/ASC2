@@ -70,6 +70,3 @@ else if( result =="rock wins" && computerChoice =="rock" && userChoice!="rock"){
 else {
     $("body").append("<h2>Its a tie! Score: "+score+"</h2>");
 }
-document.getElementById("reset").onclick = function() {
-   document.getElementById(score).innerHTML = "";
-};
